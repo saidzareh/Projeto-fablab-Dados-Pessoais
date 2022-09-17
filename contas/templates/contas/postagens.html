@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ postagem.titulo }}</title>
+</head>
+<body>
+    <h1>{{ postagem.titulo }}</h1>
+    <br>
+    <p>{{ postagem.conteudo }}</p>
+    <br><br><form action="{% url 'update' postagem.id %}"><input type="submit" value="Update" /></form>
+    <br><form action="{% url 'home' %}"><input type="submit" value="Back" /></form>
+</body>
+</html>
